@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>REZZWEB</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styleCSS.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="index.html" class="logo">RezzWeb.</a>
+
+            <nav class="navbar">
+                <a href="penjelasanHTML.html" class="navHTML">HTML</a>
+                <a href="penjelasanCSS.html" class="navCSS">CSS</a>
+                <a href="penjelasanJS.html" class="navJS">JS</a>
+            </nav>
+
+            <div class="sosial-media">
+                <a href="https://www.linkedin.com/in/namaku-reza-22a117229/"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/RezaIndraMaulana"><i class="bx bxl-github"></i></a>
+                <a href="https://www.instagram.com/rezaindramaulana"><i class="bx bxl-instagram-alt"></i></a>
+            </div>
+        </header>
+
+        <section class="css container">
+            <div class="css-text">
+                <h1>Penjelasan CSS</h1>
+                <p>Jadi gini lek, <span class="highlight">CSS itu singkatan dariCascading Style Sheets</span>  
+                    yang diamana fungsi CSS ini tuh dipakkai buat mempercatik sebuah website biar jadi lebih estetik dan keren, kan gamungkin yak kalau
+                    kita membuat website tu isinyta cuman hitam putih doang, gada animasi, tidak enak dilihat mata, layout yang asal asalan,
+                    nah disinilah CSS itu dipakai lek, biar website kita itu jadi lebih estetik dan bagus, karena di CSS itu kita bisa ngasi
+                    animasi sederhana seperti hover ketika kita ingin mengetuk sebuah tombol lah, mengatur layour website biar jadi lebih
+                    rapi lah, memberikan warna agar lebih menyala abangku dan membuat mata lebih enak untuk melihat, dan membuat user
+                    tambah tertarik dan bisa berlama lama di website itu.
+                </p>
+            </div>
+        </section>
+
+        <section class="penggunaancss container">
+            <div class="css-text">
+                <h1>Cara kerja CSS</h1>
+                <p>Jadi CSS itu punya 3 cara kerja lek, penjelasannya ada di bawah ini</p>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <h2>Inline CSS</h2>
+                    <p>
+                        <pre><code>
+            <span class="highlight">&lt;h1 style="color: blue;"&gt;Judul Halaman&lt;/h1&gt;</span>
+                        </code></pre>
+                    Jadi untuk Inline CSS kita langsung menggunakan CSSnya langsung dalam halaman coding di
+                    file HTMLnya lek, jadi gaperlu membuat file baru untuk CSS, tapi langsung di CSSkan di
+                    tag yang ingin di bagusin.
+                    </p>
+                </div>
+                <div class="card">
+                    <h2>Internal CSS</h2>
+                    <p>
+                        <pre><code>
+                <span class="highlight">&lt;style&gt;</span>
+                    h1 {
+                        color: blue;
+                    }
+                <span class="highlight">&lt;/style&gt;</span>
+                        </code></pre>
+                    Untuk Internal CSS itu tetap ada di halaman HTML tetapi ada di dalam tag <span class="highlight">&lt;style&gt;</span>.
+                    </p>
+                </div>
+                <div class="card">
+                    <h2>External CSS</h2>
+                    <p>
+                    <pre><code>
+                <span class="highlight">&lt;link rel="stylesheet" href="styles.css"&gt;</span>
+                    </code></pre>
+                    Nah kalau yang External CSS itu baru kamu membutuhkan file baru CSS, dan cara
+                    menyambungkannya dengan cara mengimport file CSSnya seperti cara yang diatas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="kelebihan-kelemahan-css container">
+            <div class="css-text">
+                <h1>Kelebihan dan Kelemahan Jenis-Jenis CSS</h1>
+                <p>Masing masing jenis CSS juga punya kelemahan dan kelebihan sendiri sendiri lek, nih penjelasan detailnya</p>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <h2>Inline CSS</h2>
+                    <p><strong>Kelebihan:</strong><br>
+                        - Gampang dipake buat elemen tertentu.<br>
+                        - Cocok buat ngerubah cepet pada elemen tertentu misal kalo ada code yang gak perlu
+                        CSS banget kayak cuman nambahin 1 wanra doang gitu.<br>
+                        <strong>Kelemahan:</strong><br>
+                        - Kurang efisien kalo diterapin ke banyak elemen.<br>
+                        - Bisa mbuat file HTML anda jadi lebih berat dan tidak terstruktur lek.
+                    </p>
+                </div>
+                <div class="card">
+                    <h2>Internal CSS</h2>
+                    <p><strong>Kelebihan:</strong><br>
+                        - Bisa dipake buat seluruh halaman HTML tanpa file eksternal.<br>
+                        - Lebih gampang buat ngatur code CSS di satu tempat di dalam file HTML.<br>
+                        <strong>Kelemahan:</strong><br>
+                        - Gak efisien kalau dipake di beberapa halaman, soalnya setiap halaman kan perlu memiliki kode CSS di
+                        dalemnya.
+                    </p>
+                </div>
+                <div class="card">
+                    <h2>External CSS</h2>
+                    <p><strong>Kelebihan:</strong><br>
+                        - Code CSS bisa dipake di banyak halaman sekaligus, jadi efisien banget.<br>
+                        - Misahin code CSS dari HTML, jadi ngebuat code itu jadi lebih terstruktur ama gampang kalau mau nyari mana yang mau di edit gitu.<br>
+                        <strong>Kelemahan:</strong><br>
+                        - Filnya kepisah, jadi perlu permintaan tambahan (request) untuk memuat halaman ( ya walaupun cuman 1 line doang si makanya efisien).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="properti-css container">
+            <div class="css-text">
+                <h1>Properti CSS yang Sering Digunakan</h1>
+                <p>Nih lek beberapa properti CSS yang biasanya sering dipake.</p>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <h2>Color</h2>
+                    <p>
+                        <code>color: red;</code><br>
+                        Properti <strong>color</strong> dipake buat ngubah warna teks di elemen HTML.
+                    </p>
+                </div>
+                <div class="card">
+                    <h2>Background</h2>
+                    <p>
+                        <code>background-color: #f39c12;</code><br>
+                        Properti <strong>background-color</strong> dipake buat ngasi warna latar belakang pada elemen biar makin menyala kan abangku.
+                    </p>
+                </div>
+                <div class="card">
+                    <h2>Padding</h2>
+                    <p>
+                        <code>padding: 20px;</code><br>
+                        Properti <strong>padding</strong> dipake buat ngasi ruang di dalam elemen (antara konten dan
+                        border) jadi bisa lebih rapi.
+                    </p>
+                </div>
+                <div class="card">
+                    <h2>Margin</h2>
+                    <p>
+                        <code>margin: 20px;</code><br>
+                        Properti <strong>margin</strong> dipake buat ngasi ruang di luar elemen, antara elemen itu
+                        dengan elemen lainnya biar jadi lebih rapi juga.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="ibaratHTML container">
+            <div class="css-text">
+                <h1>Inti CSS</h1>
+                <div class="html-img">
+                    <img src="asset/Human.png" alt="HTML Image">
+                </div>
+                <p>Nah simplenya tentang CSS tu gini lek, ibarat kayak orang itu mau styling
+                    make baju apa, nah itu dicocokan, sama seperti website yang dicocokan stylenya
+                    jadi anggepannya itu CSS adalah bajunya lek simplenya.
+                </p>
+            </div>
+        </section>
+    </body>
+</html>
